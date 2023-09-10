@@ -8,7 +8,6 @@ For more information about the brokerage measure, see:
 
 **Everett MG, Valente TW.** *Bridging, brokerage, and betweenness.* Social Networks. 2016; 44:202-208. DOI: [10.1016/j.socnet.2015.09.001](https://doi.org/10.1016/j.socnet.2015.09.001)
 
-[Link to the article](https://www.sciencedirect.com/science/article/abs/pii/S0378873315000763)
 
 ## Installation
 
@@ -35,19 +34,19 @@ Open EV-brokerage.R in R or RStudio
 
 ## Inputs/Parameters: 
 
-g: a graph (of type igraph or tidygraph)
+`g`: a graph (of type igraph or tidygraph).
 
-as.graph (optional): by default the result is returned as data frame; to have result as a graph, set as.graph to TRUE
+`as.graph` (optional): By default, the result is returned as a data frame. To obtain the result as a graph, set as.graph to TRUE.
 
-all.values (optional): by default is FALSE; if TRUE it will include all the other calculated values in addition to EV brokerage scores
+`all.values` (optional): By default, it is set to FALSE. If set to TRUE, it will include all the other calculated values in addition to EV brokerage scores.
 
-as.graph (optional): by default, the result are returned as df; if TRUE, the output will be returned as a graph 
+`as.graph` (optional): By default, the results are returned as a DataFrame; if set to TRUE, the output will be returned as a graph.
 
 ## Output/Returns: 
 
-the score as df (by default) or as a graph if *as.graph* is set to TRUE
+The score as a DataFrame (by default) or as a graph if as.graph is set to TRUE.
 
-if the original grpah has original IDs (names), results will include the original IDs (names)
+If the original graph has original IDs (names), the results will include the original IDs (names).
 
 ## Provided RDS data: 
 
@@ -76,7 +75,7 @@ res.df  <- ev_brokerage(g, all.values=TRUE)
 
 ## License
 
-This is licensed under the GNU GENERAL PUBLIC LICENSE. See LICENSE for more information.
+This program is licensed under the GNU GENERAL PUBLIC LICENSE. See LICENSE for more information.
 
 
 ## Author 
