@@ -66,10 +66,14 @@ g <- readRDS("campnet_graph.RDS")
 
 res.df <- ev_brokerage(g)
 
-to have the result as graph: 
+
+To obtain the result as graph: 
+
 res.g  <- ev_brokerage(g, as.graph=TRUE)
 
-use all.values=TRUE to include other calulated values in addition to EV brokerage scores:
+
+Use all.values=TRUE to include other calulated values in addition to EV brokerage scores:
+
 res.df  <- ev_brokerage(g, all.values=TRUE) 
 
 
