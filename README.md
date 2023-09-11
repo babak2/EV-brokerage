@@ -52,11 +52,11 @@ If the original graph has original IDs (names), the results will include the ori
 
 `granovetter_graph.RDS`: This dataset contains the undirected graph of the Granovetter hypothetical network as shown in Figure 1 of Everett & Valente (2016) article
 
-![Granovetter](./images/granovetter.png)
+![Granovetter network](./images/granovetter.png)
 
 `campnet_graph.RDS`: This dataset contains the directed graph of the Campnet hypothetical network as shown in Figure 3 of Everett & Valente (2016) article.
 
-![Campnet](./images/campnet.png)
+![Campnet network](./images/campnet.png)
 
 ## Examples:
 
@@ -75,6 +75,17 @@ res.g  <- ev_brokerage(g, as.graph=TRUE)
 Use all.values=TRUE to include other calulated values in addition to EV brokerage scores:
 
 res.df  <- ev_brokerage(g, all.values=TRUE) 
+
+
+
+With all.values=TRUE, you obtain the entire scores and other values (if IDs are included in the graph datasets). For example, for the Granovetter network case, this would be:
+
+![Granovetter scores](./images/table1.png)
+
+
+And for the Campnet network case, this would be:
+
+![Campnet scores](./images/table2.png)
 
 
 ## License
