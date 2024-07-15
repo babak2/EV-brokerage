@@ -4,7 +4,7 @@ Using betweenness centrality as an underpinning concept, *Everett and Valente (2
 
 This package contains simple R code for calculating *Everett and Valente (2016)* brokerage scores for both undirected and directed graphs.
 
-For more information about the brokerage measure, see:
+For more information about the brokerage measure, see: 
 
 **Everett MG, Valente TW.** *Bridging, brokerage, and betweenness.* Social Networks. 2016; 44:202-208. DOI: [10.1016/j.socnet.2015.09.001](https://doi.org/10.1016/j.socnet.2015.09.001)
 
